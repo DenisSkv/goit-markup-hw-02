@@ -1,4 +1,29 @@
 /* Common styles */
+:root {
+    --accent-color: #2196f3;
+
+    --hover-background-color: #188ce8;
+    /* bg hover for hero button */
+    --secondary-color: #212121;
+    /* text titles */
+    --primary-color: #757575;
+    /* text */
+    --white-color: #ffffff;
+
+    --border-color: #ececec;
+    /* border */
+    --secondary-background-color: #f5f4fa;
+    /* bg some buttons */
+    --address-primary-color: rgba(255, 255, 255, 0.6);
+    --black-color: #000000;
+
+    --primary-background-color: #2f303a;
+    /* bg footer and hero */
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -6,4 +31,171 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+
+}
+
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+header .logo-part {
+    color: var(--black-color);
+}
+
+.nav-link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--accent-color);
+}
+
+.address-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-color);
+}
+
+.hero {
+    background-color: var(--primary-background-color);
+    color: var(--white-color);
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+}
+
+.hero .button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    background-color: var(--accent-color);
+    color: currentColor;
+    border: none;
+}
+
+.button {
+    font-weight: 500;
+    color: var(--secondary-color);
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    background-color: var(--secondary-background-color);
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+
+}
+
+.hero .button:hover,
+.hero .button:focus {
+    background-color: var(--hover-background-color);
+
+}
+
+.benefits-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--secondary-color);
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.command {
+    background-color: var(--secondary-background-color);
+}
+
+.card {
+    width: 270px;
+    background-color: var(--white-color);
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.card-item {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer .logo-part {
+    color: var(--white-color);
+}
+
+footer {
+    background-color: var(--primary-background-color);
+}
+
+footer .address-item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--address-primary-color);
+    text-decoration: none;
+}
+
+.address-item-map {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.address-item:hover,
+.address-item:focus {
+    color: var(--accent-color);
 }
