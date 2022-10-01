@@ -55,9 +55,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     font-size: 14px;
-    line-height: 1.71;
     letter-spacing: 0.03em;
     background-color: var(--white-color);
     color: var(--primary-color);
@@ -107,9 +105,13 @@ body {
     text-decoration: none;
 }
 
+.address-item:hover,
+.address-item:focus {
+    color: var(--accent-color);
+}
+
 .hero {
     background-color: var(--primary-background-color);
-    color: var(--white-color);
 }
 
 .hero-title {
@@ -118,18 +120,23 @@ body {
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-align: center;
+    color: var(--white-color);
 }
 
-.hero .button {
+.hero-button {
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
     background-color: var(--accent-color);
     color: var(--white-color);
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
 }
 
-.button {
+.portfolio-btn {
     font-family: 'Roboto';
     font-weight: 500;
     color: var(--secondary-color);
@@ -142,14 +149,14 @@ body {
     cursor: pointer;
 }
 
-.button:hover,
-.button:focus {
+.portfolio-btn:hover,
+.portfolio-btn:focus {
     color: var(--white-color);
     background-color: var(--accent-color);
 }
 
-.hero .button:hover,
-.hero .button:focus {
+.hero-button:hover,
+.hero-button:focus {
     background-color: var(--hover-background-color);
 
 }
@@ -220,8 +227,11 @@ body {
     background-color: var(--primary-background-color);
 }
 
-.contacts .address-item-bottom {
+.contacts {
     font-style: normal;
+}
+
+.contacts .address-item-bottom {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -230,7 +240,6 @@ body {
 }
 
 .contacts .address-item-map {
-    font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -238,7 +247,12 @@ body {
     color: var(--white-color);
 }
 
-.address-item:hover,
-.address-item:focus {
+.address-item-bottom:hover,
+.address-item-bottom:focus {
+    color: var(--accent-color);
+}
+
+.address-item-map:hover,
+.address-item-map:focus {
     color: var(--accent-color);
 }
